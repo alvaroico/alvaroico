@@ -6,6 +6,7 @@
   
  :bar_chart: Check my stats from WakaTime (VS Code) and GitHub:
 
+<a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=alvaroico&row=1&column=6" alt="alvaroico" /></a>
 <p width="100%">
 <img width="47%" align="left" src="https://github-readme-stats.vercel.app/api?username=alvaroico&show_icons=true" alt="Alvaroico" />
 <img width="47%" align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=alvaroico&layout=compact" alt="alvaroico" />
