@@ -4,6 +4,10 @@
   "mirror-region": {
     "All": {
       "https://mirror.osbeck.com/archlinux/$repo/os/$arch": true,
+      "https://mirror.ibakerserver.pt/Arch/$repo/os/$arch": true,
+      "https://mirrors.rit.edu/archlinux/$repo/os/$arch": true,
+      "https://mirror.fcix.net/archlinux/$repo/os/$arch": true,
+      "https://mirror.pseudoform.org/$repo/os/$arch": true,
       "https://arch.lucassymons.net/$repo/os/$arch": true,
       "https://arch.mirror.constant.com/$repo/os/$arch": true,
       "https://mirrors.xtom.com/archlinux/$repo/os/$arch": true,
@@ -49,7 +53,10 @@
     "libreoffice-fresh",
     "keepass",
     "discord",
-    "dbeaver"
+    "dbeaver",
+    "firewalld",
+    "reflector",
+    "networkmanager-openvpn"
   ],
   "timezone": "America/Sao_Paulo",
   "version": "2.4.2"
