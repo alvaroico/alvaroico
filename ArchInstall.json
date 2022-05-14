@@ -3,15 +3,9 @@
   "hostname": "Colorful",
   "mirror-region": {
     "All": {
-      "https://mirror.osbeck.com/archlinux/$repo/os/$arch": true,
-      "https://mirror.ibakerserver.pt/Arch/$repo/os/$arch": true,
-      "https://mirrors.rit.edu/archlinux/$repo/os/$arch": true,
-      "https://mirror.fcix.net/archlinux/$repo/os/$arch": true,
-      "https://mirror.pseudoform.org/$repo/os/$arch": true,
-      "https://arch.lucassymons.net/$repo/os/$arch": true,
-      "https://arch.mirror.constant.com/$repo/os/$arch": true,
-      "https://mirrors.xtom.com/archlinux/$repo/os/$arch": true,
-      "https://mirrors.ocf.berkeley.edu/archlinux/$repo/os/$arch": true
+      "http://br.mirror.archlinux-br.org/$repo/os/$arch": true,
+      "http://mirror.ufscar.br/archlinux/$repo/os/$arch": true,
+      "https://mirror.osbeck.com/archlinux/$repo/os/$arch": true
     }
   },
   "packages": [
