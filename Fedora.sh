@@ -68,9 +68,7 @@ sudo dnf -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 
 # minikube
-curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-latest.x86_64.rpm &&
-sudo rpm -Uvh minikube-latest.x86_64.rpm
-sudo rm -r minikube-latest.x86_64.rpm
+sudo rpm -Uvh https://storage.googleapis.com/minikube/releases/latest/minikube-latest.x86_64.rpm
 
 # NodeJS
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
@@ -106,18 +104,18 @@ cd .. &&
 cd .. &&
 sudo rm -r temp 
 
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo dnf config-manager --add-repo https://packages.microsoft.com/yumrepos/edge --name ola
-sudo dnf config-manager --add-repo https://packages.microsoft.com/yumrepos/vscode
-sudo dnf config-manager --add-repo https://packages.microsoft.com/yumrepos/ms-teams
-sudo dnf check-update
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc &&
+sudo dnf config-manager --add-repo https://packages.microsoft.com/yumrepos/edge &&
+sudo dnf config-manager --add-repo https://packages.microsoft.com/yumrepos/vscode &&
+sudo dnf config-manager --add-repo https://packages.microsoft.com/yumrepos/ms-teams &&
+sudo dnf check-update &&
 sudo dnf -y install code microsoft-edge-stable teams
 # sudo snap install teams
 
 # Google Chrome
-sudo rpm --import https://dl.google.com/linux/linux_signing_key.pub
-sudo dnf config-manager --add-repo https://dl.google.com/linux/chrome/rpm/stable/x86_64
-dnf check-update
+sudo rpm --import https://dl.google.com/linux/linux_signing_key.pub &&
+sudo dnf config-manager --add-repo https://dl.google.com/linux/chrome/rpm/stable/x86_64 &&
+dnf check-update &&
 sudo dnf -y install google-chrome-stable
 
 sudo rpm -Uvh https://dbeaver.io/files/dbeaver-ce-latest-stable.x86_64.rpm
@@ -126,7 +124,7 @@ sudo rpm -Uvh https://dbeaver.io/files/dbeaver-ce-latest-stable.x86_64.rpm
 flatpak -y install --from https://dl.flathub.org/repo/appstream/app.resp.RESP.flatpakref &&
 flatpak -y install --from https://dl.flathub.org/repo/appstream/com.google.AndroidStudio.flatpakref &&
 flatpak -y install --from https://dl.flathub.org/repo/appstream/com.getpostman.Postman.flatpakref &&
-flatpak -y install --from https://dl.flathub.org/repo/appstream/com.obsproject.Studio.flatpakref &&
+flatpak -y install --from https://dl.flathub.org/repo/appstream/com.obsproject.Studio.flatpakref
 
 
 
@@ -136,11 +134,45 @@ export PATH=$PATH:/opt/google/chrome' >> /home/alvaroico/.bashrc
 
 
 sudo dnf -y install clang cmake ninja-build ninja-build gtk3-devel
-flutter config --android-studio-dir /var/lib/flatpak/app/com.google.AndroidStudio/x86_64/stable/1769d55e98c79a5fdc23b7705275d9c24093722d504770f670ac6d4d6808d37b/files/extra/android-studio/ &&
+flutter config --android-studio-dir /var/lib/flatpak/app/com.google.AndroidStudio/x86_64/stable/1769d55e98c79a5fdc23b7705275d9c24093722d504770f670ac6d4d6808d37b/files/extra/android-studio &&
 flutter config --android-sdk /home/alvaroico/Android/Sdk &&
 flutter doctor --android-licenses &&
 flutter precache &&
 flutter doctor -v
+
+usermod -aG docker alvaroico &&
+gpasswd -a alvaroico docker
+
+
+systemctl enable docker
+
+=========== # KVM, QEMU ===========
+
+sudo dnf -y qemu virt-manager virt-viewer dnsmasq bridge-utils netcat libguestfs
+
+
+sudo systemctl enable libvirtd.service
+sudo systemctl start libvirtd.service
+
+sudo nano /etc/libvirt/libvirtd.conf
+
+sed -i -e 's/#unix_sock_group = "libvirt"/unix_sock_group = "libvirt"/g' /etc/libvirt/libvirtd.conf
+
+sed -i -e 's/#unix_sock_rw_perms = "0770"/unix_sock_rw_perms = "0770"/g' /etc/libvirt/libvirtd.conf
+
+
+sudo usermod -a -G libvirt $(whoami)
+newgrp libvirt
+
+
+sudo systemctl restart libvirtd.service
+
+
+===================================
+
+
+
+
 
 python3 --version &&
 pip3 --version &&
