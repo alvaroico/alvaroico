@@ -140,15 +140,15 @@ flutter doctor --android-licenses &&
 flutter precache &&
 flutter doctor -v
 
-usermod -aG docker alvaroico &&
-gpasswd -a alvaroico docker
+sudo usermod -aG docker alvaroico &&
+sudo gpasswd -a alvaroico docker
 
 
-systemctl enable docker
+sudo systemctl enable docker
 
 =========== # KVM, QEMU ===========
 
-sudo dnf -y qemu virt-manager virt-viewer dnsmasq bridge-utils netcat libguestfs
+sudo dnf -y install qemu virt-manager virt-viewer dnsmasq bridge-utils netcat libguestfs
 
 
 sudo systemctl enable libvirtd.service
@@ -156,9 +156,9 @@ sudo systemctl start libvirtd.service
 
 sudo nano /etc/libvirt/libvirtd.conf
 
-sed -i -e 's/#unix_sock_group = "libvirt"/unix_sock_group = "libvirt"/g' /etc/libvirt/libvirtd.conf
+sudo sed -i -e 's/#unix_sock_group = "libvirt"/unix_sock_group = "libvirt"/g' /etc/libvirt/libvirtd.conf
 
-sed -i -e 's/#unix_sock_rw_perms = "0770"/unix_sock_rw_perms = "0770"/g' /etc/libvirt/libvirtd.conf
+sudo sed -i -e 's/#unix_sock_rw_perms = "0770"/unix_sock_rw_perms = "0770"/g' /etc/libvirt/libvirtd.conf
 
 
 sudo usermod -a -G libvirt $(whoami)
