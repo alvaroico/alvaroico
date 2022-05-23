@@ -42,7 +42,8 @@ dotnet-runtime-6.0 \
 dotnet-targeting-pack-6.0 \
 android-tools \
 php \
-composer
+composer \
+icu
 
 
 ########################################################################################################################################################################################################
@@ -148,24 +149,28 @@ sudo systemctl enable docker
 
 =========== # KVM, QEMU ===========
 
-sudo dnf -y install qemu virt-manager virt-viewer dnsmasq bridge-utils netcat libguestfs
+sudo dnf group install --with-optional virtualization &&
+sudo systemctl start libvirtd &&
+sudo systemctl enable libvirtd
+
+# sudo dnf -y install qemu virt-manager virt-viewer dnsmasq bridge-utils netcat libguestfs
 
 
-sudo systemctl enable libvirtd.service
-sudo systemctl start libvirtd.service
+# sudo systemctl enable libvirtd.service
+# sudo systemctl start libvirtd.service
 
-sudo nano /etc/libvirt/libvirtd.conf
+# sudo nano /etc/libvirt/libvirtd.conf
 
-sudo sed -i -e 's/#unix_sock_group = "libvirt"/unix_sock_group = "libvirt"/g' /etc/libvirt/libvirtd.conf
+# sudo sed -i -e 's/#unix_sock_group = "libvirt"/unix_sock_group = "libvirt"/g' /etc/libvirt/libvirtd.conf
 
-sudo sed -i -e 's/#unix_sock_rw_perms = "0770"/unix_sock_rw_perms = "0770"/g' /etc/libvirt/libvirtd.conf
-
-
-sudo usermod -a -G libvirt $(whoami)
-newgrp libvirt
+# sudo sed -i -e 's/#unix_sock_rw_perms = "0770"/unix_sock_rw_perms = "0770"/g' /etc/libvirt/libvirtd.conf
 
 
-sudo systemctl restart libvirtd.service
+# sudo usermod -a -G libvirt $(whoami)
+# newgrp libvirt
+
+
+# sudo systemctl restart libvirtd.service
 
 
 ===================================
