@@ -2,6 +2,35 @@
 # wget https://download.fedoraproject.org/pub/fedora/linux/releases/36/Container/x86_64/images/Fedora-Container-Base-36-1.5.x86_64.tar.xz
 # Gnome Tweaks ---- Extensões
 
+# Maintainer: Topik topik@topik.tech
+
+
+wget https://github.com/unicode-org/icu/releases/download/release-69-1/icu4c-69_1-Fedora32-x64.tgz
+tar xf icu4c-69_1-Fedora32-x64.tgz
+
+    
+# Remove certain files if icu is installed to not cause conflicts
+rm -rf ./icu/usr/local/lib/icu  ./icu/usr/local/lib/pkgconfig
+for filename in ./icu/usr/local/lib/*.so; do
+if [[ ! -e "$filename" ]]; then continue; fi
+    if [[ -e "/usr/lib/${filename##*/}" ]]; then
+        rm -rf "${filename}"
+    fi
+done
+
+mkdir -p /usr/share/licenses/icu69
+cp -rn ./icu/usr/local/lib/* -t /usr/lib/
+install -Dm644 ./icu/usr/local/share/icu/69.1/LICENSE /usr/share/licenses/icu69-bin/LICENSE
+
+
+
+
+
+
+
+
+
+
 cd &&
 echo '# DNF - Fedora
 fastestmirror=True
