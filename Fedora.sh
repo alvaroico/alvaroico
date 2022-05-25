@@ -2,35 +2,6 @@
 # wget https://download.fedoraproject.org/pub/fedora/linux/releases/36/Container/x86_64/images/Fedora-Container-Base-36-1.5.x86_64.tar.xz
 # Gnome Tweaks ---- Extensões
 
-# Maintainer: Topik topik@topik.tech
-
-
-wget https://github.com/unicode-org/icu/releases/download/release-69-1/icu4c-69_1-Fedora32-x64.tgz
-tar xf icu4c-69_1-Fedora32-x64.tgz
-
-    
-# Remove certain files if icu is installed to not cause conflicts
-rm -rf ./icu/usr/local/lib/icu  ./icu/usr/local/lib/pkgconfig
-for filename in ./icu/usr/local/lib/*.so; do
-if [[ ! -e "$filename" ]]; then continue; fi
-    if [[ -e "/usr/lib/${filename##*/}" ]]; then
-        rm -rf "${filename}"
-    fi
-done
-
-mkdir -p /usr/share/licenses/icu69
-cp -rn ./icu/usr/local/lib/* -t /usr/lib/
-install -Dm644 ./icu/usr/local/share/icu/69.1/LICENSE /usr/share/licenses/icu69-bin/LICENSE
-
-
-
-
-
-
-
-
-
-
 cd &&
 echo '# DNF - Fedora
 fastestmirror=True
@@ -47,7 +18,8 @@ yes "" | flatpak remote-add --if-not-exists flathub https://flathub.org/repo/fla
 dnf -y groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin &&
 dnf -y groupupdate sound-and-video &&
 dnf -y install kernel-devel wget bc dwarves &&
-dnf -y install snapd
+dnf -y install snapd &&
+sudo ln -s /var/lib/snapd/snap /snap
 
 
 # Programas Desenvolvimento
@@ -71,8 +43,7 @@ dotnet-runtime-6.0 \
 dotnet-targeting-pack-6.0 \
 android-tools \
 php \
-composer \
-icu
+composer 
 
 
 ########################################################################################################################################################################################################
@@ -139,7 +110,7 @@ sudo dnf config-manager --add-repo https://packages.microsoft.com/yumrepos/edge 
 sudo dnf config-manager --add-repo https://packages.microsoft.com/yumrepos/vscode &&
 sudo dnf config-manager --add-repo https://packages.microsoft.com/yumrepos/ms-teams &&
 sudo dnf check-update &&
-sudo dnf -y install code microsoft-edge-stable teams
+sudo dnf -y install icu code microsoft-edge-stable teams
 # sudo snap install teams
 
 # Google Chrome
@@ -148,16 +119,19 @@ sudo dnf config-manager --add-repo https://dl.google.com/linux/chrome/rpm/stable
 dnf check-update &&
 sudo dnf -y install google-chrome-stable
 
-sudo rpm -Uvh https://dbeaver.io/files/dbeaver-ce-latest-stable.x86_64.rpm
-# flatpak -y install flathub io.dbeaver.DBeaverCommunity
+# flatpak -y install flathub com.visualstudio.code &&
+flatpak -y install flathub io.dbeaver.DBeaverCommunity &&
+flatpak -y install flathub app.resp.RESP &&
+flatpak -y install flathub com.google.AndroidStudio &&
+flatpak -y install flathub com.getpostman.Postman &&
+flatpak -y install flathub com.obsproject.Studio
 
-flatpak -y install --from https://dl.flathub.org/repo/appstream/app.resp.RESP.flatpakref &&
-flatpak -y install --from https://dl.flathub.org/repo/appstream/com.google.AndroidStudio.flatpakref &&
-flatpak -y install --from https://dl.flathub.org/repo/appstream/com.getpostman.Postman.flatpakref &&
-flatpak -y install --from https://dl.flathub.org/repo/appstream/com.obsproject.Studio.flatpakref
+# Discord
+sudo dnf -y install discord
 
+sudo dnf -y install redhat-lsb-core
 
-
+sudo rpm -Uvh https://downloads.mongodb.com/compass/mongodb-compass-1.31.3.x86_64.rpm
 
 echo '# Chrome PATH
 export PATH=$PATH:/opt/google/chrome' >> /home/alvaroico/.bashrc
@@ -173,8 +147,22 @@ flutter doctor -v
 sudo usermod -aG docker alvaroico &&
 sudo gpasswd -a alvaroico docker
 
-
+sudo systemctl start docker
 sudo systemctl enable docker
+
+sudo dnf install kubernetes helm
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+
+
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-latest.x86_64.rpm
+sudo rpm -Uvh minikube-latest.x86_64.rpm
+
+sudo usermod -aG kube alvaroico &&
+sudo gpasswd -a alvaroico kube
+
+# minikube start
+
 
 =========== # KVM, QEMU ===========
 
@@ -223,3 +211,4 @@ cargo --version &&
 adb --version &&
 php -v &&
 composer --version
+kubectl version --client
