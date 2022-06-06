@@ -3,6 +3,8 @@
 # pamac install base-devel python bc pahole wget nano
 # pamac install libreoffice-fresh
 
+sudo sed -i -e 's/#ParallelDownloads = 5/ParallelDownloads = 50/g' /etc/pacman.conf 
+
 pamac install gnome-keyring \
 plasma-wayland-session \
 aspell-pt \
@@ -44,7 +46,7 @@ mongodb-compass \
 postman-bin \
 teams \
 robo3t-bin \
-nvm \
+asdf-vm \
 flutter \
 php-pdo_sqlsrv \
 icu69-bin
@@ -54,12 +56,10 @@ icu69-bin
 
 flatpak install --from https://dl.flathub.org/repo/appstream/app.resp.RESP.flatpakref
 
-sudo sed -i -e 's/#ParallelDownloads = 5/ParallelDownloads = 50/g' /etc/pacman.conf 
-
 sudo usermod -aG docker $USER &&
 sudo gpasswd -a $USER docker 
 
-systemctl enable docker
+sudo systemctl enable docker
 
 
 sudo bash -c 'echo "zend_extension = /usr/lib/php/modules/xdebug.so
@@ -69,8 +69,6 @@ xdebug.start_with_request = yes
 xdebug.client_port = 9000" >> /etc/php/php.ini' &&
 echo '# Chrome PATH
 export PATH=$PATH:/opt/google/chrome' >> /home/alvaroico/.bashrc &&
-echo '# NVM
-source /usr/share/nvm/init-nvm.sh' >> /home/alvaroico/.bashrc &&
 echo '# Docker BuidKit
 export DOCKER_BUILDKIT=1' >> /home/alvaroico/.bashrc &&
 echo '# ADB Android PATH
@@ -79,7 +77,28 @@ export PATH=$PATH:/home/alvaroico/Android/Sdk/platform-tools' >> /home/alvaroico
 # sudo chown $USER /dev/kvm &&
 # ls -al /dev/kvm &&
 # android-studio
+# echo '# NVM
+# source /usr/share/nvm/init-nvm.sh' >> /home/alvaroico/.bashrc &&
+# nvm install --lts
 
+echo '# ASDF
+. /opt/asdf-vm/asdf.sh' >> /home/alvaroico/.bashrc 
+
+
+asdf plugin list all &&
+asdf plugin-add nodejs &&
+asdf list all nodejs
+
+asdf install nodejs 10.24.1 && 
+asdf install nodejs lts && 
+asdf global nodejs lts
+
+echo 'alias node10="asdf global nodejs 10.24.1"' >> /home/alvaroico/.bashrc 
+echo 'alias nodelts="asdf global nodejs lts"' >> /home/alvaroico/.bashrc 
+
+# echo 'nodejs 10.24.1' >> .tool-versions
+
+sudo pacman -S clang cmake ninja
 
 sudo chown -R $USER /opt/flutter &&
 flutter config --android-studio-dir /opt/android-studio/ &&
@@ -89,15 +108,11 @@ flutter precache &&
 flutter doctor -v
 
 
-nvm install --lts &&
 npm install -g npm yarn @nestjs/cli &&
 mix archive.install hex phx_new
 
 # cargo
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-echo '# Rust cargo PATH
-source $HOME/.cargo/env' >> /home/alvaroico/.bashrc
-
 
 
 python --version &&
@@ -122,8 +137,6 @@ cargo --version
 pamac install virt-manager qemu-full vde2 iptables-nft dnsmasq bridge-utils openbsd-netcat edk2-ovmf swtpm
 
 sudo systemctl enable libvirtd.service &&
-sudo systemctl start libvirtd.service &&
-sudo systemctl status libvirtd.service &&
 sudo usermod -a -G libvirt $USER &&
 sudo usermod -a -G libvirt-qemu $USER
 
@@ -131,7 +144,9 @@ sudo sed -i -e 's/#unix_sock_group = "libvirt"/unix_sock_group = "libvirt"/g' /e
 
 sudo sed -i -e 's/#unix_sock_rw_perms = "0770"/unix_sock_rw_perms = "0770"/g' /etc/libvirt/libvirtd.conf
 
-# nano /usr/lib/systemd/system/libvirtd.service 
-
-# [Service]
-# WorkingDirectory=/usr/sbin
+# Download mais rapido Docker
+sudo su
+echo '{
+    "max-concurrent-uploads": 10,
+    "max-concurrent-downloads": 10
+}' >> /etc/docker/daemon.json

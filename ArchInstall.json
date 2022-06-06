@@ -1,6 +1,9 @@
 {
-  "config_version": "2.4.2",
-  "hostname": "Colorful",
+  "archinstall-language": "Portuguese",
+  "audio": "pipewire",
+  "bootloader": "grub-install",
+  "config_version": "2.5.0",
+  "keyboard-layout": "us-acentos",
   "mirror-region": {
     "All": {
       "http://br.mirror.archlinux-br.org/$repo/os/$arch": true,
@@ -52,6 +55,7 @@
     "reflector",
     "networkmanager-openvpn"
   ],
+  "sys-language": "pt_BR.UTF-8",
   "timezone": "America/Sao_Paulo",
-  "version": "2.4.2"
+  "version": "2.5.0"
 }

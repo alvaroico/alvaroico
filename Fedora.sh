@@ -72,11 +72,24 @@ sudo dnf -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 sudo rpm -Uvh https://storage.googleapis.com/minikube/releases/latest/minikube-latest.x86_64.rpm
 
 # NodeJS
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+# curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.0
+echo '# ASDF
+. /opt/asdf-vm/asdf.sh' >> ~/.bashrc
+echo '# ASDF Completions 
+. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc
 
 exit
 
-nvm install --lts &&
+asdf plugin list all &&
+asdf plugin-add nodejs &&
+asdf list all nodejs
+
+asdf install nodejs 10.24.1 && 
+asdf install nodejs lts && 
+asdf global nodejs lts
+
 npm install -g npm yarn &&
 mix archive.install hex phx_new
 
