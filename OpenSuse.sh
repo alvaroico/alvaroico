@@ -135,7 +135,7 @@ asdf global nodejs 18.7.0
 echo 'alias nodebeta="asdf global nodejs 18.7.0"' >> /home/alvaroico/.bashrc
 echo 'alias nodelts="asdf global nodejs lts"' >> /home/alvaroico/.bashrc 
 
-npm install -g npm yarn @nestjs/cli typescript
+npm install -g yarn @nestjs/cli typescript
 
 # Google Chrome
 sudo rpm --import https://dl.google.com/linux/linux_signing_key.pub &&

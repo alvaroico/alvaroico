@@ -90,7 +90,7 @@ asdf install nodejs 10.24.1 &&
 asdf install nodejs lts && 
 asdf global nodejs lts
 
-npm install -g npm yarn &&
+npm install -g yarn &&
 mix archive.install hex phx_new
 
 # Flutter

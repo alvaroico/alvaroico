@@ -108,7 +108,7 @@ flutter precache &&
 flutter doctor -v
 
 
-npm install -g npm yarn @nestjs/cli &&
+npm install -g yarn @nestjs/cli &&
 mix archive.install hex phx_new
 
 # cargo
