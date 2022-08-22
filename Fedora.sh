@@ -96,7 +96,7 @@ mix archive.install hex phx_new
 # Flutter
 git clone https://github.com/flutter/flutter.git -b stable .flutter
 echo '# Flutter
-export PATH="$PATH:`pwd`/.flutter/bin"' >> ~/.bashrc
+export PATH="$PATH:$HOME/.flutter/bin"' >> ~/.bashrc
 
 # PHP X Debug
 sudo dnf -y install php-devel &&
