@@ -8,6 +8,7 @@
     "All": {
       "http://br.mirror.archlinux-br.org/$repo/os/$arch": true,
       "http://mirror.ufscar.br/archlinux/$repo/os/$arch": true,
+      "https://forksystems.mm.fcix.net/archlinux/$repo/os/$arch": true,
       "https://mirror.osbeck.com/archlinux/$repo/os/$arch": true
     }
   },
