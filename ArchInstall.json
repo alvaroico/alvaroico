@@ -50,7 +50,16 @@
     "libssh",
     "unixodbc",
     "libxslt",
-    "fop"
+    "fop",
+    "gimp",
+    "git",
+    "git-lfs",
+    "ttf-firacode-nerd",
+    "networkmanager-openvpn",
+    "dbeaver",
+    "obs-studio",
+    "keepass",
+    "libreoffice-fresh"
   ],
   "silent": false,
   "sys-language": "pt_BR.UTF-8",
