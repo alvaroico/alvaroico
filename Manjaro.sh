@@ -1,6 +1,6 @@
 
 # Dev Terminal
-# pamac install base-devel python bc pahole wget nano
+# pamac install base-devel python python-pip bc pahole wget nano
 # pamac install libreoffice-fresh
 
 sudo sed -i -e 's/#ParallelDownloads = 5/ParallelDownloads = 50/g' /etc/pacman.conf 
@@ -12,7 +12,7 @@ keepass \
 discord \
 dbeaver \
 obs-studio \
-ttf-cascadia-code \
+ttf-fira-code \
 dart \
 php \
 xdebug \
@@ -32,7 +32,6 @@ docker-compose \
 minikube \
 kubectl \
 noto-fonts-emoji \
-ttf-cascadia-code \
 noto-fonts-cjk
 
 ==========================
@@ -72,7 +71,16 @@ export PATH=$PATH:/opt/google/chrome' >> /home/alvaroico/.bashrc &&
 echo '# Docker BuidKit
 export DOCKER_BUILDKIT=1' >> /home/alvaroico/.bashrc &&
 echo '# ADB Android PATH
-export PATH=$PATH:/home/alvaroico/Android/Sdk/platform-tools' >> /home/alvaroico/.bashrc
+export PATH=$PATH:/home/alvaroico/Android/Sdk/platform-tools' >> /home/alvaroico/.bashrc &&
+echo 'export JAVA_HOME=/usr/lib/jvm/default
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+export ANDROID_HOME=~/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools' >> /home/alvaroico/.bashrc
 
 # sudo chown $USER /dev/kvm &&
 # ls -al /dev/kvm &&
@@ -89,26 +97,26 @@ asdf plugin list all &&
 asdf plugin-add nodejs &&
 asdf list all nodejs
 
-asdf install nodejs 10.24.1 && 
+asdf install nodejs 18.7.0 && 
 asdf install nodejs lts && 
 asdf global nodejs lts
 
-echo 'alias node10="asdf global nodejs 10.24.1"' >> /home/alvaroico/.bashrc 
+echo 'alias node10="asdf global nodejs 18.7.0"' >> /home/alvaroico/.bashrc 
 echo 'alias nodelts="asdf global nodejs lts"' >> /home/alvaroico/.bashrc 
 
-# echo 'nodejs 10.24.1' >> .tool-versions
+# echo 'nodejs 18.7.0' >> .tool-versions
 
 sudo pacman -S clang cmake ninja
 
 sudo chown -R $USER /opt/flutter &&
-flutter config --android-studio-dir /opt/android-studio/ &&
-flutter config --android-sdk /home/alvaroico/Android/Sdk &&
+# flutter config --android-studio-dir /opt/android-studio/ &&
+# flutter config --android-sdk /home/alvaroico/Android/Sdk &&
 flutter doctor --android-licenses &&
 flutter precache &&
 flutter doctor -v
 
 
-npm install -g yarn @nestjs/cli &&
+npm install -g yarn @nestjs/cli typescript &&
 mix archive.install hex phx_new
 
 # cargo
