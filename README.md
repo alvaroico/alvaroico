@@ -1,73 +1,137 @@
- :rocket: Joga ai [https://alvaroico.github.io/Gamedev-js-alura/](https://alvaroico.github.io/Gamedev-js-alura/)
-  
- :busts_in_silhouette:  Dê uma olhada no meu perfil do LinkedIn: [linkedin.com/in/alvaroico/](https://www.linkedin.com/in/alvaroico/)
-  
-## Full Stack Software Developer
+# 👋 Olá, eu sou o Álvaro!
 
- <hr>
- 
- <div style="align = center" >
-   <img height="165em" src="https://github-readme-stats.vercel.app/api?username=alvaroico&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&hide_rank=true&hide=commits&custom_title=Stats"/>
-  <a href="github.com/alvaroico">
-    <img height="165em" src="http://github-readme-streak-stats.herokuapp.com?user=alvaroico&theme=tokyonight&hide_border=true&fire=FF00E9" />
-  </a>
-    <a href="github.com/alvaroico">
-   <img height="260em" src="https://github-readme-activity-graph.vercel.app/graph?username=alvaroico&theme=github&hide_border=true&bg_color=1A1B27&color=628FDA&line=2BAEAE&point=FE00E8&custom_title=Commits%20Graph" alt="GitHub Commits Graph" /> 
+## 🚀 Full Stack Software Developer
+
+🎮 **Projeto em Destaque:** [Game Dev JS](https://alvaroico.github.io/Gamedev-js-alura/)
+
+💼 **LinkedIn:** [linkedin.com/in/alvaroico/](https://www.linkedin.com/in/alvaroico/)
+
+### 🎯 Sobre Mim
+
+💻 **Desenvolvedor Full Stack | Integrações Financeiras | Consultoria de TI | +8 anos de experiência**
+
+Sou um profissional de tecnologia apaixonado por transformar complexidade em **soluções robustas e escaláveis**. Ao longo de mais de **8 anos**, atuei em diversos segmentos — de **fintechs** a **hospitais**, passando por **consultorias** e **varejo** — sempre com foco em entregar valor real através de sistemas bem estruturados e integrações eficientes.
+
+Antes de mergulhar no desenvolvimento, construí uma sólida base em **Consultoria de Riscos em TI**, auditando sistemas ERP (SAP, TOTVS), bancos de dados (Oracle, SQL Server) e infraestruturas Unix/Windows, o que me deu uma **visão estratégica** sobre segurança, conformidade e boas práticas.
+
+🎓 **Formação:**
+
+- **Bacharelado** em Ciência da Computação – UNIP
+- **Pós-graduação** em Segurança da Informação – Estácio
+- **Técnico** em Mecatrônica – ETEC José Martimiano da Silva
+
+🚀 **Atualmente**, contribuo com soluções de **integração financeira e institucional** em projetos desafiadores, com mentalidade de melhoria contínua, código limpo e performance.
+
+### 💼 Experiência Profissional
+
+- **CI&T** - Analista de Sistemas Sr
+- **MAAC-TECH** - Desenvolvedor Full Stack \_
+- **Consultoria CBYK** - React Native Developer
+- **ACT Digital** - Desenvolvedor Full Stack III
+
+**Principais clientes:** Bradesco, Crefisa, Vibra Energia, Hospital Albert Einstein, Nestlé, BDO
+
+🔍 **Projetos entregues:** Sistemas de crédito, autenticação, validação de ambiente sistêmico, segurança da informação, integrações financeiras
+
+### 📊 GitHub Stats
+
+<div align="center">
+  <img height="165em" src="https://github-readme-stats.vercel.app/api?username=alvaroico&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&hide_rank=true&hide=commits&custom_title=Stats"/>
+  <img height="165em" src="https://streak-stats.demolab.com?user=alvaroico&theme=tokyonight&hide_border=true&fire=FF00E9&ring=628FDA&currStreakLabel=628FDA" />
+  <br/>
+  <img height="200em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=alvaroico&layout=compact&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&hide=html,css"/>
 </div>
-## Hard Skills 🧑‍💻
 
-<div style="display: inline_block; align = center">
+## 🛠️ Tecnologias & Ferramentas
+
+### **Principais Stacks**
+
+<div align="center">
   <table>
     <tr>
-      <td>
-        <img align="center" alt="Hugo-JS" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-        <img align="center" alt="Hugo-TS" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
-        <img align="center" alt="Hugo-NodeJs" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg">
-        <img align="center" alt="Hugo-React" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
-        <img align="center" alt="Hugo-NextJs" width="32" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored-dark.svg"/>
-        <img align="center" alt="Hugo-NestJs" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-plain.svg">
-        <img align="center" alt="Hugo-Tailwind" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg">
-        <img align="center" alt="Hugo-Expressjs" height="32" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored-dark.svg">
-      </td>
-      <td>
-        <img align="center" alt="Hugo-Java" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg">
-        <img align="center" alt="Hugo-Springboot" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg">
-      </td>
-      <td>
-        <img align="center" alt="Hugo-C#" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">   
-        <img align="center" alt="Hugo-dotnetcore" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dotnetcore/dotnetcore-original.svg">
-        <img align="center" alt="Hugo-blazor" height="36" style="margin-top: -20;" src="https://vectorwiki.com/images/kYNj1__blazor.svg">
-      </td>
-     <td>
-        <img align="center" alt="Hugo-MySQL" height="35" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg">
-         <img align="center" alt="Hugo-PostreSQL" height="35" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg">
-        <img align="center" alt="Hugo-MongoDB" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg">
-        <img align="center" alt="Hugo-Docker" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg">
-        <img align="center" alt="Hugo-MongoDB" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.svg">
-     </td>
+      <th>Frontend</th>
+      <th>Backend</th>
+      <th>Mobile</th>
+      <th>Database & DevOps</th>
     </tr>
- </table> 
- 
+    <tr>
+      <td align="center">
+        <img alt="JavaScript" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+        <img alt="TypeScript" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
+        <img alt="React" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
+        <img alt="Next.js" width="32" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored-dark.svg"/>
+        <img alt="Tailwind" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg">
+      </td>
+      <td align="center">
+        <img alt="Node.js" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg">
+        <img alt="Express.js" height="32" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored-dark.svg">
+        <img alt="NestJS" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-original.svg">
+        <img alt="C#" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">
+        <img alt=".NET Core" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dotnetcore/dotnetcore-original.svg">
+      </td>
+      <td align="center">
+        <img alt="React Native" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
+        <img alt="Java" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg">
+        <img alt="Kotlin" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg">
+        <img alt="Android" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original-wordmark.svg">
+      </td>
+      <td align="center">
+        <img alt="MySQL" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg">
+        <img alt="PostgreSQL" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg">
+        <img alt="MongoDB" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg">
+        <img alt="Redis" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg">
+        <img alt="Docker" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg">
+      </td>
+    </tr>
+  </table>
 </div>
- 
- ### Other Skills and Experiences
- <span>
-  <img align="center" alt="Hugo-C" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
-  <img align="center" alt="Hugo-Cplusplus" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg">
-  <img align="center" alt="Hugo-Python" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
-  <img align="center" alt="Hugo-Numpy" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" />
-  <img align="center" alt="Hugo-Django" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" />
-  <img align="center" alt="Hugo-Pytest" height="27" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-original.svg" />
-  <img align="center" alt="Hugo-FastAPI" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" />
-  <img align="center" alt="Hugo-Kafka" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" />
-  <img align="center" alt="Hugo-DigitalOcean" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/digitalocean/digitalocean-original.svg" />
-  <img align="center" alt="Hugo-Kubernetes" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" />
-  <img align="center" alt="Hugo-HTML5" width="25" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg"/>
-  <img align="center" alt="Hugo-Sass" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg">
-  <img align="center" alt="Hugo-Angular" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg">
-  <img align="center" alt="Hugo-Bootstrap" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg">
-  <img align="center" alt="Hugo-Kotlin" height="21" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg">
-  <img align="center" alt="Hugo-Selenium" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/selenium/selenium-original.svg">
-  <img align="center" alt="Hugo-Salesforce" height="27" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/salesforce/salesforce-original.svg">
-  <img align="center" alt="Hugo-Arduino" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" />
-</span>
+
+### **Outras Tecnologias**
+
+<div align="center">
+  <img alt="PHP" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg">
+  <img alt="Rust" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-original.svg">
+  <img alt="C++" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg">
+  <img alt="Python" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+  <img alt="Spring Boot" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg">
+  <img alt="RabbitMQ" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg">
+  <img alt="Kubernetes" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg">
+  <img alt="Linux" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg">
+  <img alt="AWS" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg">
+  <img alt="Angular" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg">
+  <img alt="Bootstrap" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg">
+  <img alt="Sass" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg">
+</div>
+
+### 🎯 Especialidades
+
+- **Integrações Financeiras:** APIs de pagamento, sistemas bancários e fintechs
+- **Desenvolvimento Full Stack:** Desde frontend responsivo até APIs robustas
+- **Microserviços:** Arquiteturas escaláveis com Docker e Kubernetes
+- **Mobile Development:** Apps nativos Android e cross-platform com React Native
+- **Consultoria em TI:** Auditoria e otimização de ambientes sistêmicos
+
+### 📈 Principais Conquistas
+
+- ✅ **8+ anos** de experiência em desenvolvimento de software e consultoria em TI
+- ✅ **Clientes de grande porte:** Bradesco, Crefisa, Vibra Energia, Hospital Albert Einstein, Nestlé, BDO
+- ✅ **Especialista em integrações** para o setor financeiro e institucional
+- ✅ **Background em auditoria** de sistemas ERP, bancos de dados e infraestruturas
+- ✅ **Visão sistêmica** combinando desenvolvimento, segurança e conformidade
+- ✅ **Formação sólida** com pós-graduação em Segurança da Informação
+
+### 📫 Vamos Conversar?
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alvaroico/)
+
+</div>
+
+---
+
+<div align="center">
+  <i>💡 Sempre aberto a novos desafios e oportunidades de colaboração!</i>
+  <br/>
+  <sub>⚡ "Code is like humor. When you have to explain it, it's bad." - Cory House</sub>
+</div>
