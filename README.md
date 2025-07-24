@@ -36,14 +36,15 @@ Antes de mergulhar no desenvolvimento, construí uma sólida base em **Consultor
 ### 📊 GitHub Stats
 
 <div align="center">
-  <img height="165em" src="https://github-readme-stats.vercel.app/api?username=alvaroico&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&hide_rank=true&hide=commits&custom_title=Stats"/>
+  <img height="200em" src="https://github-readme-stats.vercel.app/api?username=alvaroico&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&hide_rank=true&hide=commits&custom_title=Stats"/>
   <img height="200em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=alvaroico&layout=compact&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&hide=html,css"/>
-  <img height="165em" src="https://streak-stats.demolab.com?user=alvaroico&theme=tokyonight&hide_border=true&fire=FF00E9&ring=628FDA&currStreakLabel=628FDA" />
+  <img height="200em" src="https://streak-stats.demolab.com?user=alvaroico&theme=tokyonight&hide_border=true&fire=FF00E9&ring=628FDA&currStreakLabel=628FDA" />
+
 </div>
 
 ## 🛠️ Tecnologias & Ferramentas
 
-### **Principais Stacks**
+### 💻 **Principais Stacks**
 
 <div align="center">
   <table>
@@ -51,7 +52,7 @@ Antes de mergulhar no desenvolvimento, construí uma sólida base em **Consultor
       <th>Frontend</th>
       <th>Backend</th>
       <th>Mobile</th>
-      <th>Database & DevOps</th>
+      <th>Database</th>
     </tr>
     <tr>
       <td align="center">
@@ -73,6 +74,7 @@ Antes de mergulhar no desenvolvimento, construí uma sólida base em **Consultor
         <img alt="Java" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg">
         <img alt="Kotlin" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg">
         <img alt="Android" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original.svg">
+        <img alt="Flutter" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg">
       </td>
       <td align="center">
         <img alt="MySQL" height="32" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg">
@@ -85,21 +87,43 @@ Antes de mergulhar no desenvolvimento, construí uma sólida base em **Consultor
   </table>
 </div>
 
-### **Outras Tecnologias**
+### ⚡ **Outras Tecnologias**
 
 <div align="center">
-  <img alt="PHP" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg">
-  <img alt="Rust" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-original.svg">
-  <img alt="C++" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg">
-  <img alt="Python" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
-  <img alt="Spring Boot" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg">
-  <img alt="RabbitMQ" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rabbitmq/rabbitmq-original.svg">
-  <img alt="Kubernetes" height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg">
-  <img alt="Linux" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg">
-  <img alt="AWS" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.svg">
-  <img alt="Angular" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg">
-  <img alt="Bootstrap" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg">
-  <img alt="Sass" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg">
+  <table>
+    <tr>
+      <th>Linguagens</th>
+      <th>Frameworks & Tools</th>
+      <th>Cloud & DevOps</th>
+      <th>Frontend & Style</th>
+    </tr>
+    <tr>
+      <td align="center">
+        <img alt="PHP" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg">
+        <img alt="Rust" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-original.svg">
+        <img alt="C++" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg">
+        <img alt="Python" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+      </td>
+      <td align="center">
+        <img alt="Spring Boot" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg">
+        <img alt="RabbitMQ" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rabbitmq/rabbitmq-original.svg">
+        <img alt="Apache Kafka" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/apachekafka/apachekafka-original.svg">
+        <img alt="Selenium" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/selenium/selenium-original.svg">
+      </td>
+      <td align="center">
+        <img alt="AWS" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg">
+        <img alt="Kubernetes" height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg">
+        <img alt="Linux" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg">
+        <img alt="Firebase" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain.svg">
+      </td>
+      <td align="center">
+        <img alt="Angular" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg">
+        <img alt="Bootstrap" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg">
+        <img alt="Sass" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg">
+        <img alt="HTML5" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+      </td>
+    </tr>
+  </table>
 </div>
 
 ### 🎯 Especialidades
