@@ -1,5 +1,3 @@
-# 👋 Olá, eu sou o Álvaro!
-
 ## 🚀 Full Stack Software Developer
 
 🎮 **Projeto em Destaque:** [Game Dev JS](https://alvaroico.github.io/Gamedev-js-alura/)
@@ -25,7 +23,7 @@ Antes de mergulhar no desenvolvimento, construí uma sólida base em **Consultor
 ### 💼 Experiência Profissional
 
 - **CI&T** - Analista de Sistemas Sr
-- **MAAC-TECH** - Desenvolvedor Full Stack \_
+- **MAAC-TECH** - Desenvolvedor Full Stack e React Native Developer Android e iOS
 - **Consultoria CBYK** - React Native Developer
 - **ACT Digital** - Desenvolvedor Full Stack III
 
