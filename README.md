@@ -22,9 +22,9 @@ Antes de mergulhar no desenvolvimento, construí uma sólida base em **Consultor
 
 ### 💼 Experiência Profissional
 
+- **Consultoria CBYK** - React Native Developer e C# 
 - **CI&T** - Analista de Sistemas Sr
 - **MAAC-TECH** - Desenvolvedor Full Stack e React Native Developer Android e iOS
-- **Consultoria CBYK** - React Native Developer
 - **ACT Digital** - Desenvolvedor Full Stack III
 
 **Principais clientes:** Bradesco, Crefisa, Vibra Energia, Hospital Albert Einstein, Nestlé, BDO
@@ -156,3 +156,4 @@ Antes de mergulhar no desenvolvimento, construí uma sólida base em **Consultor
   <br/>
   <sub>⚡ "Code is like humor. When you have to explain it, it's bad." - Cory House</sub>
 </div>
+
